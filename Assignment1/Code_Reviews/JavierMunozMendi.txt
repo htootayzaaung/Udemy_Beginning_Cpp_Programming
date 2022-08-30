@@ -1,0 +1,13 @@
+-Beautiful code and easy to comprehend!
+
+-100% working!
+
+-Meaningful variable names used!
+
+-Beautiful "reverseStr()" method
+
+-A little bit of reliance on string library methods.
+
+-Excessive blank lines within the code.
+
+-Inconsistent ways of initializing variables; a combination of  both C and C++

@@ -1,0 +1,19 @@
+In C++, we can have functions that have different parameter lists that have the
+same name.
+
+So rather than having many functions with different names, we can have the same
+function that implements a version of the function for the each type of
+parameter-set.
+
+In software engineering, we have a principle called polymorphism, which means
+many forms for the same concept. "Functions-overloading" is indeed an example of
+"polymorphism".
+
+Example prototypes:
+
+void display(int n);
+void display(double d);
+void display(std::string s);
+void display(std::string s, std::string t);
+void display(std::vector<int> v);
+void display(std::vector<std::string> v);

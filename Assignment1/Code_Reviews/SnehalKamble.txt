@@ -1,0 +1,13 @@
+-The code failed to compile.
+
+-Variables were not initialized in a C++ way.
+
+-There is no "return 0;" statement in the main function.
+
+-Meaningful variable names not given.
+
+-Extremely poor indentation.
+
+-"using namespace std;" has been used despite the question prompt explicitly stating not to.
+
+-Overall, the code is difficult to comprehend.
