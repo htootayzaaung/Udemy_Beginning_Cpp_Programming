@@ -1,0 +1,56 @@
+___________________
+Classes and Objects
+___________________
+
+
+Classes:
+________
+
+_blueprint from which objects are created
+_a user-defined data-type
+_has attributes (data)
+_has methods (functions)
+_can hide data and methods
+_provides a public interface
+
+
+Example classes:
+________________
+
+_Account
+_Employee
+_Image
+_std::vector
+_std::string
+
+
+Objects:
+________
+
+_created from a class
+_represents a specific instance of a class
+_can create many, many objects
+_each has its own identity
+_each can use the defined class methods
+
+
+Example objects:
+________________
+
+_Frank's account is an instance of an Account
+_Jim's account is an instance of an Account
+_Each has its own balance, can make deposits, withdrawals, etc.
+
+
+______________________________________________________________________________________________
+
+int high_score;			//"high_score" is an object/instance from a class "int"
+int low_score;			//"low_score" is an object/instance from a class "int"
+
+Account frank_account;		//"frank_account" is an object/instance from a class "Account"
+Account jim_account;		//same as ^
+
+std::vector <int> scores;	//"scores" is an object/instance from a class "std::vector"
+std::string name;		//same as ^
+
+_______________________________________________________________________________________________

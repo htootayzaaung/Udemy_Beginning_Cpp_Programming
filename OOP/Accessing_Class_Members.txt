@@ -1,0 +1,19 @@
+____________________
+The "." dot operator
+____________________
+_______________________________________
+Account *frank_account = new Account();
+
+(*frank_account).balance;
+(*frank_account).deposit(1000.0);
+_______________________________________
+
+_______________________
+The "->" arrow operator
+_______________________
+_______________________________________
+Account *frank_account = new Account();
+
+frank_account->balance;
+frank_account->deposit(1000.00);1
+_______________________________________

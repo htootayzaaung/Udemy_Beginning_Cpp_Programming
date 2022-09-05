@@ -1,0 +1,69 @@
+______________________
+Procedural Programming
+______________________
+
+
+_Focuses on processes or actions that a program takes
+_Programs are typically a collection of functions
+_Data is declared seperately
+_Data is passed as arguments into functions
+_Fairly easy to learn
+_It involves breaking a huge task to smaller sub-tasks
+
+
+Limitations:
+____________
+
+
+As programs get larger they become more:
+
+_difficult to understand
+_difficult to maintain
+_difficult to extend
+_difficult to debug
+_difficult to reuse code
+_fragile and easier to break
+
+
+___________________________
+Object-Oriented Programming
+___________________________
+
+
+Classes and Objects:
+____________________
+
+_focus is on classes that model real-world domain activities
+_allows developer to think at a higher level of abstraction
+_used successfully in very large programs
+
+
+Encapsulation
+_____________
+
+
+Information-hiding:
+___________________
+
+_implementation-specific logic can be hidden
+_users of the class code to the interface since they don't need to know 
+the implementation
+_more abstraction
+-easier to test, debug, maintain and extend
+
+
+Reusability:
+____________
+
+_easier to reuse classes in other applications
+_faster development
+_higher quality
+
+
+Inheritance:
+____________
+
+_can reuse new classes in term of existing classes
+_reusability
+_polymorphic classes
+

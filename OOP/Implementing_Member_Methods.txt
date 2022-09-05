@@ -1,0 +1,15 @@
+___________________________
+Implementing Member methods
+___________________________
+
+_Member methods have access to member attributes, therefore you don't need to
+ pass them as arguments. This is how and why getters and setters are used.
+
+_Can be implemented inside the class declaration, implicitly inline
+
+_Can be implmented outside the class declaration need to use:
+ Class_name::method_name
+
+_Can seperate specification from implementation
+ .h file for the class declaration
+ .cpp file for the class implementation

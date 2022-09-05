@@ -1,0 +1,12 @@
+______
+public: accessible everywhere
+______
+
+_______
+private: accessible only by members or friends of the class
+_______
+
+_________
+protected: used with inheritance
+_________
+
