@@ -1,0 +1,34 @@
+Assigning the copy-variable does not changes the contents of the original
+vector. 
+_________________________________________________________________________
+
+vector <string> stooges {"Larry", "Moe", "Curly"};
+
+for (auto str: stooges)
+{
+	str = "Funny"			//assigns the copy-variable "str"
+}
+
+for (auto str: stooges)
+{
+	cout << str << endl;		//Still, "Larry", "Moe", "Curly"
+}
+_________________________________________________________________________
+
+
+Assigning the referenced-copy-variable changes the contents of the
+original vector.
+______________________________________________________________________________________________________
+
+vecotr <string> stooges {"Larry", "Moe", "Curly"};
+
+for (auto &str: stooges)
+{
+	str = "Funny";			//Changes the actual elements in the vector as it is referenced
+}
+
+for (auto str: stooges)
+{
+	cout << str << endl;		//"Funny", "Funny", "Funny"
+}
+________________________________________________________________________________________________________

@@ -1,0 +1,13 @@
+When to use pointers? When to use reference parameters?
+
+____________________________
+When to use "Pass-by-value"?
+____________________________
+
+_The function does not modify the actual parameter(of a global variable), and the parameter is small and efficient to copy
+ like simple types (int, char, double, etc.)
+
+_The function does modify the actual parameter, and the parameter is expensive to copy 
+
+
+

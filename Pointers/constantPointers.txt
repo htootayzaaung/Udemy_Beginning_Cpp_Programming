@@ -8,12 +8,12 @@ _________________
 
 
 ________________________________________________________
-					  		|
-int high_score {100};					|
-int low_score {65};					|
-int *const score_ptr {&high_score};			|
-							|
-*score_ptr = 86;		//1.)Allowed!		|	
-score_ptr  = &low_score;	//2.)Error!		|					  
-							|
-________________________________________________________|	
+
+int high_score {100};
+int low_score {65};
+int *const score_ptr {&high_score};
+
+*score_ptr = 86;		//1.)Allowed!
+score_ptr  = &low_score;	//2.)Error!
+
+________________________________________________________
