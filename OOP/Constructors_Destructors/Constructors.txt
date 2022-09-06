@@ -1,0 +1,15 @@
+____________
+Constructors
+____________
+
+_Special member method
+
+_Invoked during object creation
+
+_Useful for initialization
+
+_Same name as the class
+
+_No return type is specified
+
+_Can be overloaded
