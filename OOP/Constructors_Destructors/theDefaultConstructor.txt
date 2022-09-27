@@ -1,0 +1,19 @@
+_______________________
+The Default Constructor
+_______________________
+
+_Does not expect any arguments
+
+_Also called the no-args Constructor
+
+_If you write no constructors at all for a class, C++ will generate a Default
+ constructor that does nothing.
+
+_Default constructors are called when you instantiate a new object with no
+ arguments.
+
+For example,
+___________________________
+Player frank;
+Player *enemy = new Player;
+___________________________

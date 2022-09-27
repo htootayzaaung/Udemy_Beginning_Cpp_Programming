@@ -1,0 +1,13 @@
+________________________________
+Constructor Initialization Lists
+________________________________
+
+Constructor Initialization Lists
+
+  _are more efficient
+
+  _initialization list immediately follows the parameter Lists
+
+  _initializes the data members as the object is created!
+
+  _order of initialization is the order of declaration in the class

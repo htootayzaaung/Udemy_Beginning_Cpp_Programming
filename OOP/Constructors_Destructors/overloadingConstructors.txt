@@ -1,0 +1,11 @@
+________________________
+Overloading constructors
+________________________
+
+_Classes can have as many constructors as necessary
+
+_Each must have a unique signature (i.e unique parameter list, or at least
+ unique parameter datatypes)
+
+_Default constructor is no longer compiler-generated once another constructor is
+ declared.

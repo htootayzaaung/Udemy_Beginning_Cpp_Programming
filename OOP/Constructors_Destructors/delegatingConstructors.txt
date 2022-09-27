@@ -1,0 +1,9 @@
+_______________________
+Delegating constructors
+_______________________
+
+_Often the code for constructors is very similar, which can lead to errors
+ associated with duplication of code.
+
+_C++ allows delegating constructors, the idea is that a constructor can now call
+ another constructor provided that they are within the same class.  
