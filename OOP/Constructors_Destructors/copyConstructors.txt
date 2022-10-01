@@ -1,0 +1,96 @@
+________________
+Copy constructor
+________________
+
+_When objects are copied C++ must create a new object from an existing object
+
+_When is a copy of an object made?
+
+  _passing object by value as a parameter
+  _returning an object from a function by value
+  _constructing one object based on another of the same class
+
+____________________
+Pass object by value
+____________________
+
+________________________________________________________________________________
+Player hero {"Hero", 100, 20};
+
+void display_player(Player p)
+{
+  //an object "p" is a COPY of hero in this example, refer to the code below
+  //use p
+  //destructor for p will be called
+
+  /*
+    Notice that p is local to the display player function. So when p goes out of
+    the scope, the destructor will be called.
+  */
+}
+
+display_player(hero);
+________________________________________________________________________________
+
+______________________
+Return object by value
+______________________
+
+________________________________________________________________________________
+Player enemy;
+
+Player create_super_enemy()
+{
+  Player an_enemy {"Super Enemy", 1000, 1000};
+  return an_enemy;
+}
+
+enemy = create_super_enemy();
+________________________________________________________________________________
+
+_____________________________________
+Construct one object based on another
+_____________________________________
+
+________________________________________________________________________________
+Player hero {"Hero", 100, 100};
+
+Player another_hero {hero};
+
+//A copy of an object "hero" is made by another object called "another_hero"
+________________________________________________________________________________
+
+______________________________
+Declaring the Copy Constructor
+______________________________
+
+________________________________________________________________________________
+
+/*
+  Format for declaring the copy Constructor:
+
+  Class_name::Class_name(const Class_name &source);
+
+  //"source" is what is to be copied
+*/
+
+//Prototypes:
+
+Player::Player(const Player &source);
+
+Account::Account(const Account &source);
+
+//Implementations:
+
+Player::Player(const Player &source)          //Constructor_initialization_lists
+  : name {source.name},
+    health {source.health},
+    xp {source.xp},
+{}
+
+Account::Account(const Account &source)
+  : name {source.name},
+    balance {soruce.balance}
+{}
+
+________________________________________________________________________________
