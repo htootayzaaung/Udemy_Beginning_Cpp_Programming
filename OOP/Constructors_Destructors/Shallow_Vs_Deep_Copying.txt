@@ -1,0 +1,50 @@
+________________________
+Shallow Vs. Deep Copying
+________________________
+
+_Consider a class that conatains a pointer as a data memeber
+
+_Constructor allocates storage dynamically and initializes the pointer
+
+_Destructor releases the memory allocated by the constructors
+
+_What happens in the default copy constructor?
+
+__________________________________________
+Default copy constructor (Shallow copying)
+__________________________________________
+
+_memberwise copy
+
+_Each data member (fields / attributes) are copied from the source object
+
+_The pointer is copied NOT what it points to (shallow copy)
+
+The problem comes into play when one of those objects is destroyed and its
+destructor is called.
+
+When this happens the object's destructor releases the memory allocated on the
+heap.
+
+However, the other object is still pointing to this released area and thinks the
+area is still valid.
+
+What can happen is this eventuality is that the program crashes while in
+development.
+
+In order to avoid this completely, there arises "deep-copying"
+
+
+____________
+Deep copying
+____________
+
+With deep copy, we just don't simply copy the pointer. Instead, we copy the data
+pointed to by the pointer.
+
+This usually means that we have to allocate storage for the copied data and then
+perform the copy. With a deep copy, each object will have a pointer to unique
+storage in the heap and both areas will contain the same data.
+
+Always use a copy constructor that does a deep copy when you have raw C++
+pointers.

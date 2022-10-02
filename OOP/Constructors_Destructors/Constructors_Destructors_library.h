@@ -15,6 +15,9 @@ class Player
     Player(std::string inputName, int health_value, int xp_value);
     Player(const Player &source);
 
+    //Destructor
+    ~Player()
+
     std::string get_name()
     {
         return name;
