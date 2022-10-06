@@ -1,0 +1,52 @@
+____________________
+static class members
+____________________
+
+_Class attributes and methods can be declared as "static"
+
+_When we declare an attribute as "static", it implies that a single data
+member belongs to the entire class, not to any specific object.
+
+_When we declare a method as "static", it implies that it is independent of any
+objects. It can also be called using the class name.
+
+________________________________________________________________________________
+class display_player_name
+{
+  private:
+    static int num_players;
+
+  public:
+    static int get_num_players();
+
+};
+
+int Player::num_players = 0;
+
+//This is how you assign the "static" variable "num_players" to "0".
+
+
+int Player::get_num_players()
+{
+  return num_players;
+}
+
+//This is how you define the "static" function "get_num_players()".
+
+Player::Player(string name_val, int health_val, int xp_val)
+  :
+  {
+    num_players++;
+  }
+
+/*
+This is how you update "num_players" whenever a constructor is called (i.e
+whenever an object is created).
+*/
+
+Player::~Player()
+{
+  num_players--;
+}
+
+________________________________________________________________________________

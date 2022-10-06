@@ -1,0 +1,74 @@
+________________________
+Using const with classes
+________________________
+
+_____________
+const Objects
+_____________
+
+_"villain" is a const object so it's attributes cannot change
+
+Declaration of a const object:
+
+const Player villain {"Villain", 100, 55};
+
+_Once the "villain" object is created we can't change any of it's attributes
+
+________
+Example:
+________
+
+_________________________________________________
+
+const Player villain {"Villain", 100, 55};
+
+void display_player_name(const Player &p)
+{
+	cout << p.get_name() << endl;
+}
+
+display_player_name(villain)		//ERROR!
+________________________________________________
+
+Although this method doesn't modifies the object there will be a compilation
+error that you might typically get on a setter.
+
+This is because the compiler assumes that the get name function could
+potentially change the object, so it gives an error.
+
+_____________
+const Methods
+_____________
+
+________
+Example:
+________
+
+________________________________________
+class Player
+{
+	private:
+
+	public:
+		string get_name() const;
+		/*
+		The compiler will not only allow this method to be passed on const object,
+		it will also produce a compiler error if you try to modify any of the
+		object's attributes in the method.
+		*/
+};
+________________________________________
+
+After modifying "string get_name()" method with a "const" modifier, the call to
+"get_name()" is working 100%.
+
+However, the call to "set_name(name)" is still not allowed.
+
+________________________________________________________________________________
+const Player villain {"Villain", 100, 55};
+
+villain.set_name("Nice guy");								//ERROR "villain" object is "const"
+
+cout << villain.get_name() << endl;					//OK since "get_name()" is now "const"
+
+________________________________________________________________________________
