@@ -1,0 +1,41 @@
+_____________________
+Structures Vs Classes
+_____________________
+
+_Everything you can do with classes, you can do with structs.
+
+_Except for the fact that the members of the structs are public by default, and
+the members of the classes are private by default.
+
+What does the above bullet point actually means?
+
+Suppose:
+________________________________________________________________________________
+class Person
+{
+  string name;
+  string get_name();
+};
+
+Person p;
+p.name = "Frank";
+
+/*
+  compiler error - private variables cannot be initialized or modified without
+  public methods or constructors.
+*/
+
+________________________________________________________________________________
+
+_____________________________________________
+When to use "struct" and when to use "class"?
+_____________________________________________
+
+struct:
+  _Use "struct" for passive objects with private access
+  _Don't declare methods in "struct"
+
+class:
+  _Use class for active objects with private access
+  _Implement getters and setters as needed
+  _Implement member methods as needed
