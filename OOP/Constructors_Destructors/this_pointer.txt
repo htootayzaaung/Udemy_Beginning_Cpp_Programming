@@ -1,0 +1,46 @@
+______________
+"this" pointer
+______________
+
+
+_Contains the address of the object - so it's a pointer to the object
+
+_Can only be used in class scope
+
+_All member access is done via "this" pointer
+
+_Can be used by the programmer:
+  _To access data member and methods
+  _To determine if two object are the same (more in the next section)
+  _Can be dereferenced (*this) to yield the current object
+
+
+________
+Example1
+________
+
+void Account::set_balance(double bal)
+{
+  balance = bal;      //this->balance is implied
+}
+
+
+Suppose the parameter and an attribute of the object has the same name.
+
+__________
+Ambiguous!
+__________
+
+void Account::set_balance(double balance)
+{
+  balance = balance;      //which balance? The parameter
+}
+
+____________
+Unambiguous!
+____________
+
+void Account::set_balance(double balance)
+{
+  this->balance = balance;  //Now we know which balance is which. 
+}

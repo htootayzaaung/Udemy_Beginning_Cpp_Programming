@@ -1,0 +1,61 @@
+________________________
+Using const with classes
+________________________
+
+_Pass arguments to class member methods as "const"
+(Please refer back to Copy Constructor methods)
+________________________________________________________________________________
+Player::Player(const Player &source)
+  : name {source.name},
+    health {source.health},
+    xp {source.xp}
+{}
+________________________________________________________________________________
+
+_"const" cannot be changed.
+
+______________________
+Abrupt "const" nuances
+______________________
+
+________________________________________________________________________________
+const Player villain {"Villain", 100, 55};
+
+void display_player_name(const Player &p)
+{
+  cout << p.get_name() << endl;
+}
+
+display_player_name(villain);     //ERROR
+
+________________________________________________________________________________
+
+These abrupt errors happens as a precaution to prevent public methods from
+modifying the object's attributes.
+
+One way to prevent this from happening is to tell the compiler that specific
+methods will not modify the object.
+
+________________________________________________________________________________
+class Player
+{
+  private:
+
+  public:
+    std::string get_name() const;
+    /*
+      _Error will occur if "get_name()" happens to modify the "name" which is an
+       attribute of an object.
+
+      _typing ""
+    */
+};
+________________________________________________________________________________
+
+int main()
+{
+  const Player villain {"Villain", 100, 55};
+  //"const" modifier implies that none of villain attributes can be chnaged
+
+  Player hero {"Hero", 100, 15};
+}
