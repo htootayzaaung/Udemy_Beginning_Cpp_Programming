@@ -1,0 +1,34 @@
+Section 13 Challlenge
+_____________________
+
+For this challenge you are to develop the foundation for a program for which movie fanatics to keep 
+track of what moves they have watched and how many times they watched each movie.
+
+The program must support the following:
+
+class Movie - models a movie which includes
+- movie name (String)
+- movie rating (G, PG, PG-13, R) (String)
+- watched -  the number of times the movie has been watched (Integer)
+
+class Movies - models a collection of movie objects
+
+Obviously, "Movies" needs to know about "Movie" since it is a collection of "Movie" object. However, our 
+main driver should only interact with Movie class.
+
+For example, a simple main should be able to 
+- create a "Movies" object
+- ask the "Movies" object to add a movie by providing the movie name, rating and watched count. 
+(i.e that is to create a constructor by accepting "movie_name", "movie_rating" and "watched_count")
+as the arguments to the constructor.
+- ask the "Movies" object to increment the watched count by 1 for a movie given its name.
+- ask the "Movies" object to display all of its movies.
+
+Additionally,
+
+- if we try to add a movie whose name is already in the movies collection we should display this error
+to the user.
+- if we try to increment the watched count for a movue name whose name is not in the movies we should
+display this error to the user.
+
+
